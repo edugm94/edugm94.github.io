@@ -57,16 +57,15 @@ main {
 }
 
 .profile {
-    flex-basis: 100%;
+    flex-basis: calc(50% - 10px); /* Adjust this value and margin as needed */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-right: 10px;
 }
 
 .profile img {
-    max-width: 10%; /* Adjust the maximum width as needed */
-    width: 100%; 
+    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -77,8 +76,8 @@ main {
 }
 
 .introduction {
-    flex-basis: 100%;
-    margin-top: 20px;
+    flex-basis: calc(50% - 5px); /* Adjust this value and margin as needed */
+    margin-top: 50px;
 }
 
 /* Add more CSS styling as needed */
@@ -107,4 +106,27 @@ main {
 
 .introduction p {
     font-size: 25px;
-    font-family: "Lora",
+    font-family: "Lora", monospace;
+}
+
+/* Add this CSS code to center the .profile section */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .profile img {
+    max-width: 30%;
+    border-radius: 50%;
+    }   
+
+    .profile {
+        flex-basis: 100%; /* Take up full width on small screens */
+        text-align: center; /* Center-align the content */
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+    
+    .introduction {
+        flex-basis: 100%; /* Take up full width on small screens */
+    }
+}
