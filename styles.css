@@ -76,7 +76,7 @@ main {
 }
 
 .introduction {
-    flex-basis: calc(50% - 5px); /* Adjust this value and margin as needed */
+    flex-basis: calc(50% - 1px); /* Adjust this value and margin as needed */
     margin-top: 50px;
 }
 
@@ -100,13 +100,15 @@ main {
 }
 
 .introduction h2 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Lora", monospace;
 }
 
 .introduction p {
     font-size: 25px;
     font-family: "Lora", monospace;
+    margin-top: 30px;
+    max-width: 600px;
 }
 
 /* Add this CSS code to center the .profile section */
