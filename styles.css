@@ -1,0 +1,96 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(240, 244, 247, 0.9); ;
+}
+
+/* Basic styling for the header and navigation */
+header {
+    background-color: #092947;
+    color: #fff;
+    padding: 10px 0;
+    text-align: right;
+    font-family: "Lora", serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: "Lora", serif; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styling for the main content */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    max-width: 40%;
+    border-radius: 50%;
+}
+
+.contact-info {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Lora", serif;
+}
+
+.introduction {
+    flex: 2;
+    margin-top: 50px;
+}
+
+/* Add more CSS styling as needed */
+
+.contact-info h1 {
+    font-size: 30px ;
+    font-family: "Lora", monospace;
+    text-align: left;
+}
+
+.contact-info h4 {
+    text-align: left;
+    font-family: "Lora", monospace;
+}
+
+.contact-info p {
+    font-size: 15px ;
+    font-family: "Lora", monospace;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.introduction h2 {
+    font-size: 50px;
+    font-family: "Lora", monospace;
+}
+.introduction p {
+    font-size: 25px; /* Increase text size for the introduction section */
+    font-family: "Lora", monospace;
+    
+    max-width: 800px; 
+}
+
+.emoji {
+    font-size: 23px; /* Adjust the font size as needed */
+}
