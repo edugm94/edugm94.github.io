@@ -22,6 +22,15 @@ nav {
 .menu {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+    color: #fff;
 }
 
 .menu li {
@@ -48,22 +57,23 @@ main {
 }
 
 .profile {
-    flex-basis: calc(50% - 10px);
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
 .profile img {
-    max-width: 30%;
+    max-width: 10%; /* Adjust the maximum width as needed */
+    width: 100%; 
     border-radius: 50%;
 }
 
 .contact-info {
-    margin-top: 20px;
     text-align: center;
     font-family: "Lora", serif;
+    margin-top: 20px;
 }
 
 .introduction {
@@ -80,5 +90,21 @@ main {
 
 .contact-info h4 {
     text-align: left;
-    font-family
+    font-family: "Lora", monospace;
+}
 
+.contact-info p {
+    font-size: 15px;
+    font-family: "Lora", monospace;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.introduction h2 {
+    font-size: 50px;
+    font-family: "Lora", monospace;
+}
+
+.introduction p {
+    font-size: 25px;
+    font-family: "Lora",
