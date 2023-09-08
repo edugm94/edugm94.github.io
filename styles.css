@@ -80,6 +80,12 @@ main {
     margin-top: 50px;
 }
 
+.publications {
+    flex-basis: calc(50% - 1px); /* Adjust this value and margin as needed */
+    margin-top: 50px;   
+    font-family: "Lora", serif;
+}
+
 /* Add more CSS styling as needed */
 .contact-info h1 {
     font-size: 30px;
@@ -105,10 +111,21 @@ main {
 }
 
 .introduction p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Lora", monospace;
     margin-top: 30px;
-    max-width: 600px;
+    max-width: 700px;
+}
+
+.publications p {
+    font-size: 16px;
+    font-family: "Lora", monospace;
+    margin-top: 30px;
+    max-width: 700px;
+}
+
+.second-h2 {
+    margin-top: 50px; /* Adjust the margin-top value as desired */
 }
 
 /* Add this CSS code to center the .profile section */
@@ -130,5 +147,6 @@ main {
     
     .introduction {
         flex-basis: 100%; /* Take up full width on small screens */
+        margin-top: 100px;
     }
 }
