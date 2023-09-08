@@ -2,7 +2,6 @@
 body, h1, h2, p {
     margin: 0;
     padding: 0;
-    background-color: rgba(240, 244, 247, 0.9); ;
 }
 
 /* Basic styling for the header and navigation */
@@ -14,18 +13,28 @@ header {
     font-family: "Lora", serif;
 }
 
-nav ul {
-    list-style: none;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline;
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
     margin-right: 20px;
     font-size: 20px;
-    font-family: "Lora", serif; 
+    font-family: "Lora", serif;
 }
 
-nav ul li a {
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
     text-decoration: none;
     color: #fff;
 }
@@ -33,64 +42,43 @@ nav ul li a {
 /* Styling for the main content */
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
 
 .profile {
-    flex: 1;
+    flex-basis: calc(50% - 10px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 10px;
 }
 
 .profile img {
-    max-width: 40%;
+    max-width: 30%;
     border-radius: 50%;
 }
 
 .contact-info {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     font-family: "Lora", serif;
 }
 
 .introduction {
-    flex: 2;
-    margin-top: 50px;
+    flex-basis: 100%;
+    margin-top: 20px;
 }
 
 /* Add more CSS styling as needed */
-
 .contact-info h1 {
-    font-size: 30px ;
+    font-size: 30px;
     font-family: "Lora", monospace;
     text-align: left;
 }
 
 .contact-info h4 {
     text-align: left;
-    font-family: "Lora", monospace;
-}
+    font-family
 
-.contact-info p {
-    font-size: 15px ;
-    font-family: "Lora", monospace;
-    text-align: left;
-    padding-bottom: 8px;
-}
-
-.introduction h2 {
-    font-size: 50px;
-    font-family: "Lora", monospace;
-}
-.introduction p {
-    font-size: 25px; /* Increase text size for the introduction section */
-    font-family: "Lora", monospace;
-    
-    max-width: 800px; 
-}
-
-.emoji {
-    font-size: 23px; /* Adjust the font size as needed */
-}
